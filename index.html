@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoQuest - Car Rental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white p-4 shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo with Icon -->
+            <div class="flex items-center space-x-2">
+                <!-- Logo Icon -->
+         <img src="racing.png" alt="" class="icon">
+                <!-- Logo Text -->
+                <a href="#" class="text-2xl font-bold text-yellow-500 hover:text-yellow-400">AutoQuest</a>
+            </div>
+            <!-- Navbar Links -->
+            <div class="space-x-8 hidden md:flex">
+                <a href="#" class="hover:text-yellow-400">Home</a>
+                <a href="#services" class="hover:text-yellow-400">Services</a>
+                <a href="#fleet" class="hover:text-yellow-400">Fleet</a>
+                <a href="#about" class="hover:text-yellow-400">About Us</a>
+                <a href="#contact" class="hover:text-yellow-400">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none" id="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden bg-blue-900 text-white" id="mobile-menu" style="display: none;">
+        <a href="#" class="block py-2 px-4 hover:bg-blue-800">Home</a>
+        <a href="#services" class="block py-2 px-4 hover:bg-blue-800">Services</a>
+        <a href="#fleet" class="block py-2 px-4 hover:bg-blue-800">Fleet</a>
+        <a href="#about" class="block py-2 px-4 hover:bg-blue-800">About Us</a>
+        <a href="#contact" class="block py-2 px-4 hover:bg-blue-800">Contact</a>
+    </div>
+    
+    <section class="hero-bg h-screen flex items-center justify-center text-center text-white">
+    <div class="bg-blue-900 bg-opacity-70 p-8 rounded-lg">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to AutoQuest</h1>
+        <p class="text-lg md:text-2xl mb-6">Find your perfect car rental with unmatched comfort and service.</p>
+        <a href="#fleet" class="inline-block bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-semibold py-3 px-6 rounded-lg">Browse Our Fleet</a>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-50" id="services">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1: Daily and Weekly Rentals -->
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <div class="flex justify-center mb-4 text-yellow-500">
+                    <!-- Replace with an appropriate icon -->
+            <img src="routine.png" alt="" class="services-icon" />
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-900 mb-2">Daily and Weekly Rentals</h3>
+                <p class="text-gray-700">Flexible car rental plans perfect for vacations, business trips, or daily commutes. Choose from a wide range of vehicles to match your preferences.</p>
+            </div>
+
+            <!-- Service 2: Long-Term Leases -->
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <div class="flex justify-center mb-4 text-yellow-500">
+            <img src="money.png" alt="money.png" class="services-icon">
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-900 mb-2">Long-Term Leases</h3>
+                <p class="text-gray-700">Affordable and convenient long-term rental options for extended stays or business needs. Enjoy discounted rates and premium service.</p>
+            </div>
+
+            <!-- Service 3: Luxury Car Rentals -->
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <div class="flex justify-center mb-4 text-yellow-500">
+        <img src="car-rental.png" alt="car-rental.png" class="services-icon">
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-900 mb-2">Luxury Car Rentals</h3>
+                <p class="text-gray-700">Experience the best in comfort and style with our range of luxury vehicles. Perfect for special occasions, business events, and VIP travel.</p>
+            </div>
+
+            <!-- Service 4: Airport Transfers -->
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <div class="flex justify-center mb-4 text-yellow-500">
+      <img src="airport.png" alt="airport.png" class="services-icon">
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-900 mb-2">Airport Transfers</h3>
+                <p class="text-gray-700">Seamless airport pickup and drop-off services to make your travel stress-free. Available 24/7 with timely and professional service.</p>
+            </div>
+
+            <!-- Service 5: Chauffeur Services -->
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <div class="flex justify-center mb-4 text-yellow-500">
+        <img src="chauffeur.png" alt="" class="services-icon" />
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-900 mb-2">Chauffeur Services</h3>
+                <p class="text-gray-700">Sit back and relax with our professional chauffeur services. Ideal for business meetings, city tours, or any occasion where you need a driver.</p>
+            </div>
+
+            <!-- Service 6: Corporate and Event Rentals -->
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <div class="flex justify-center mb-4 text-yellow-500">
+    <img src="car-rent.png" alt="" class="services-icon"/>
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-900 mb-2">Corporate and Event Rentals</h3>
+                <p class="text-gray-700">Tailored rental services for corporate clients and special events. Choose from a variety of vehicles and receive top-notch customer service.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-blue-900" id="fleet">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-white mb-12">Our Fleet</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Fleet 1: Economy Cars -->
+      <div class="bg-blue-900 p-6 shadow-lg rounded-lg border border-white">
+        <img src="economy-car.jpeg" alt="Economy Car" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-2xl font-semibold text-white mb-2">Economy Cars</h3>
+        <p class="text-gray-300">Affordable, fuel-efficient, and perfect for city driving. Ideal for budget-conscious travelers.</p>
+      </div>
+
+      <!-- Fleet 2: SUVs -->
+      <div class="bg-blue-900 p-6 shadow-lg rounded-lg border border-white">
+        <img src="suv.jpeg" alt="SUV" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-2xl font-semibold text-white mb-2">SUVs</h3>
+        <p class="text-gray-300">Spacious and versatile vehicles perfect for family trips or off-road adventures.</p>
+      </div>
+
+      <!-- Fleet 3: Luxury Cars -->
+      <div class="bg-blue-900 p-6 shadow-lg rounded-lg border border-white">
+        <img src="luxury-car.jpeg" alt="Luxury Car" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-2xl font-semibold text-white mb-2">Luxury Cars</h3>
+        <p class="text-gray-300">Experience the pinnacle of comfort and style. Perfect for special occasions or business travel.</p>
+      </div>
+
+      <!-- Fleet 4: Family Vans -->
+      <div class="bg-blue-900 p-6 shadow-lg rounded-lg border border-white">
+        <img src="family-van.jpeg" alt="Family Van" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-2xl font-semibold text-white mb-2">Family Vans</h3>
+        <p class="text-gray-300">Spacious and comfortable vans ideal for larger families or group trips with ample storage space.</p>
+      </div>
+
+      <!-- Fleet 5: Sports Cars -->
+      <div class="bg-blue-900 p-6 shadow-lg rounded-lg border border-white">
+        <img src="sports-car.jpeg" alt="Sports Car" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-2xl font-semibold text-white mb-2">Sports Cars</h3>
+        <p class="text-gray-300">High-performance cars for those looking for excitement and speed.</p>
+      </div>
+
+      <!-- Fleet 6: Electric Cars -->
+      <div class="bg-blue-900 p-6 shadow-lg rounded-lg border border-white">
+        <img src="electric-car.jpeg" alt="Electric Car" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-2xl font-semibold text-white mb-2">Electric Cars</h3>
+        <p class="text-gray-300">Eco-friendly and technologically advanced. Drive sustainably without compromising comfort.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-gray-50" id="about">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-blue-900">About Us</h2>
+      <p class="text-lg text-gray-700 mt-4">Your Trusted Partner for Car Rentals</p>
+    </div>
+    <div class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between gap-8">
+      <!-- About Image -->
+      <div class="w-full lg:w-1/2">
+        <img src="about-us.jpeg" alt="About AutoQuest" class="w-full h-80 object-cover rounded-lg shadow-lg">
+      </div>
+      <!-- About Text Content -->
+      <div class="w-full lg:w-1/2">
+        <p class="text-gray-700 mb-4">
+          At <span class="font-bold text-blue-900">AutoQuest</span>, we pride ourselves on delivering exceptional car rental services tailored to the unique needs of each client. Since our inception, we have grown into a trusted name known for reliability, quality, and customer satisfaction.
+        </p>
+        <p class="text-gray-700 mb-4">
+          Our fleet features a diverse range of vehicles, including economy cars, luxury models, SUVs, family vans, and electric cars, ensuring that we meet the preferences of every traveler. Our commitment to excellence is evident in every interaction, from seamless online booking to exceptional customer support.
+        </p>
+        <p class="text-gray-700 mb-4">
+          We believe that renting a car should be a simple, stress-free experience. That's why we continuously innovate and improve our services, ensuring you get to your destination comfortably and on time. Whether for business or leisure, we strive to provide you with a rental experience that exceeds expectations.
+        </p>
+        <p class="text-gray-700 mb-4">
+          <strong>Our mission</strong> is to be your first choice for car rentals by delivering premium services and a wide selection of vehicles, all at competitive prices. We value transparency, customer satisfaction, and sustainability as the cornerstones of our business.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-blue-900 text-white" id="contact">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
+    
+    <!-- Contact Info -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Get in Touch</h3>
+        <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> Phone: (123) 456-7890</p>
+        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> Email: support@autoquest.com</p>
+        <p><i class="fas fa-map-marker-alt mr-2"></i> Location: 123 Main St, City, State, ZIP</p>
+        <div class="mt-4">
+          <h4 class="font-semibold">Operating Hours</h4>
+          <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+          <p>Sat-Sun: 9:00 AM - 4:00 PM</p>
+        </div>
+      </div>
+      
+      <!-- Contact Form -->
+      <div>
+        <form action="https://formspree.io/f/mdkozayd" method="POST" class="bg-blue-800 p-6 rounded-lg shadow-lg">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium">Name</label>
+            <input type="text" id="name"
+           name="name" class="w-full p-2 rounded bg-gray-100 text-gray-900" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-2 rounded bg-gray-100 text-gray-900" required>
+          </div>
+          <div class="mb-4">
+            <label for="phone" class="block text-sm font-medium">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full p-2 rounded bg-gray-100 text-gray-900">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium">Message</label>
+            <textarea id="message" name="message" class="w-full p-2 rounded bg-gray-100 text-gray-900 h-32" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-yellow-500 py-2 rounded font-semibold hover:bg-yellow-600 transition">Send Message</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Map (optional) -->
+    <div class="mt-12">
+      <iframe class="w-full h-72 rounded-lg" src="https://www.google.com/maps/embed?..." frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <!-- Social Media -->
+    <div class="flex justify-center mt-8">
+      <a href="#" class="mx-2"><i class="fab fa-facebook-f text-white hover:text-yellow-500"></i></a>
+      <a href="#" class="mx-2"><i class="fab fa-twitter text-white hover:text-yellow-500"></i></a>
+      <a href="#" class="mx-2"><i class="fab fa-instagram text-white hover:text-yellow-500"></i></a>
+      <a href="#" class="mx-2"><i class="fab fa-linkedin-in text-white hover:text-yellow-500"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-blue-900 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Contact Information -->
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+      <p><i class="fas fa-phone-alt mr-2"></i> (123) 456-7890</p>
+      <p><i class="fas fa-envelope mr-2"></i> support@autoquest.com</p>
+      <p><i class="fas fa-map-marker-alt mr-2"></i> 123 Main St, City, State, ZIP</p>
+    </div>
+    
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+      <ul>
+        <li><a href="/" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="/about" class="hover:text-yellow-400">About Us</a></li>
+        <li><a href="/services" class="hover:text-yellow-400">Services</a></li>
+        <li><a href="/fleet" class="hover:text-yellow-400">Fleet</a></li>
+        <li><a href="/contact" class="hover:text-yellow-400">Contact Us</a></li>
+      </ul>
+    </div>
+    
+    <!-- Newsletter Signup -->
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Stay Connected</h4>
+      <p class="mb-2">Subscribe to our newsletter for the latest updates and offers:</p>
+      <form action="https://formspree.io/f/mdkozayd" method="POST" class="flex flex-col md:flex-row items-center">
+        <input type="email" name="email" placeholder="Enter your email" class="w-full md:w-auto p-2 rounded text-gray-900" required>
+        <button type="submit" class="mt-2 md:mt-0 md:ml-2 bg-yellow-500 px-4 py-2 rounded hover:bg-yellow-600 transition">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Social Media and Legal -->
+  <div class="mt-8 border-t border-gray-700 pt-4 text-center md:text-left">
+    <div class="flex justify-center md:justify-between items-center">
+      <div class="flex space-x-4">
+        <a href="#"><i class="fab fa-facebook-f text-white hover:text-yellow-500"></i></a>
+        <a href="#"><i class="fab fa-twitter text-white hover:text-yellow-500"></i></a>
+        <a href="#"><i class="fab fa-instagram text-white hover:text-yellow-500"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in text-white hover:text-yellow-500"></i></a>
+      </div>
+      <p class="mt-4 md:mt-0">© 2024 AutoQuest. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>

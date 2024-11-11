@@ -1,0 +1,14 @@
+  .icon {
+      width: 20px;
+  }
+  
+     .hero-bg {
+            background-image: url('hero-img.jpeg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .services-icon {
+            width: 35px;
+        }
